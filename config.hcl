@@ -12,19 +12,20 @@ locals {
   vpc_single_nat_gateway    = true
   vpc_enable_dns_hostnames  = true
   vpc_create_igw            = true
-
   vpc_tags_Name        = "vpc-eks" 
   vpc_tags_Owner       = ""
   vpc_tags_Contact     = ""
   vpc_tags_Project     = ""
   vpc_tags_Environment = ""
 
-  # EKS cluster config
+  # EKS cluster info
   tenant = ""
   environment = ""
   zone = ""
   terraform_version = "Terraform 1.0.1"
   cluster_version = "1.21"
+
+  # EKS cluster node group
 
   node_group_name = ""
   instance_types = ["t3.large"]
