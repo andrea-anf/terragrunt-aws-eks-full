@@ -3,8 +3,8 @@
 ## Information
 This module allows user to create an EKS cluster with the specified add-ons.
 It has been created to orchestrate two modules:
-    -    terraform-aws-eks (terraform-aws-eks/src/1.0/)
-    -    terraform-aws-eks-addons (terraform-aws-eks-addons/src/1.0/)
+--    terraform-aws-eks (terraform-aws-eks/src/1.0/)
+-    terraform-aws-eks-addons (terraform-aws-eks-addons/src/1.0/)
 
 ## Usage
 ### Setup
