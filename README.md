@@ -3,8 +3,8 @@
 ## Information
 This module allows user to create an EKS cluster with the specified add-ons.
 It has been created to orchestrate two modules:
-    - terraform-aws-eks (terraform-aws-eks/src/1.0/)
-    - terraform-aws-eks-addons (terraform-aws-eks-addons/src/1.0/)
+-   terraform-aws-eks (terraform-aws-eks/src/1.0/)
+-   terraform-aws-eks-addons (terraform-aws-eks-addons/src/1.0/)
 
 ## Usage
 ### Setup
@@ -24,7 +24,7 @@ To run the module you need to fill the following files with the desired values.
 
 ### Apply
 From root directory of the module:
-    1. `terragrunt run-all init`
-    2. `terragrunt run-all apply`
+1.  `terragrunt run-all init`
+2.  `terragrunt run-all apply`
 
 Since dependencies has been used inside the module, the `terraform run-all plan` command may generate errors (check docs for info https://terragrunt.gruntwork.io/docs/reference/cli-options/#run-all).
