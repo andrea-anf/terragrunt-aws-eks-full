@@ -20,7 +20,7 @@ To run the module you need to fill the following files with the desired values.
 	- to create a new one you have to leave **vpc_id** empty and set **vpc_cidr**
 	- set tags (*vpc_tags_Name* will be used as the name for the VPC)
 - EKS Cluster:
-	- set the cluster's info and the node group's configuration
+	- set the cluster's info and the node group's configuration 
 	- set *true* **enable_xx** to apply the required add-ons 
 
 ### Apply

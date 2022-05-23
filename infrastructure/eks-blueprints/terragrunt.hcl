@@ -19,16 +19,7 @@ inputs = {
   terraform_version     = local.config_vars.locals.terraform_version
   cluster_version       = local.config_vars.locals.cluster_version
 
-  managed_node_groups = {
-    mg_4 = {
-      node_group_name   = local.config_vars.locals.node_group_name
-      instance_types    = local.config_vars.locals.instance_types
-      min_size          = local.config_vars.locals.min_size
-      max_size          = local.config_vars.locals.max_size
-      desired_size      = local.config_vars.locals.desired_size
-      max_unavailable   = local.config_vars.locals.max_unavailable
-    }
-  }
+  managed_node_groups   = local.config_vars.locals.managed_node_groups
 
   vpc_id                = local.config_vars.locals.vpc_id
   vpc_cidr              = local.config_vars.locals.vpc_cidr

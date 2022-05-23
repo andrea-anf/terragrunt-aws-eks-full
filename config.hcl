@@ -27,12 +27,17 @@ locals {
 
   # EKS cluster node group
 
-  node_group_name = ""
-  instance_types = ["t3.large"]
-  min_size = "2"
-  max_size = "4"
-  desired_size = "3"
-  max_unavailable = "1"
+  managed_node_groups = {
+    t3_L= {
+      node_group_name = "managed-group"
+      instance_types = ["t3.large"]
+      min_size = "1"
+      max_size = "4"
+      desired_size = "1"
+      max_unavailable = "1"
+    }
+  }
+
 
 
   # EKS Blueprints addons

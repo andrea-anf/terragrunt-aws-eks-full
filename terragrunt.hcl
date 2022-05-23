@@ -1,9 +1,9 @@
 remote_state {
   backend = "s3"
   config = {
-    bucket  = "customer-${get_aws_account_id()}-environment-project-region-tf"
+    bucket  = "lth-${get_aws_account_id()}-test-eks-eu-west-1-tf"
     key     = "terragrunted/${path_relative_to_include()}.tfstate"
-    region  = ""
+    region  = "eu-west-1"
     encrypt = true
   }
 }
