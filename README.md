@@ -30,3 +30,7 @@ From root directory of the module:
 2. `terragrunt run-all apply`
 
 Since dependencies has been used inside the module, the `terraform run-all plan` command may generate errors (check docs for info https://terragrunt.gruntwork.io/docs/reference/cli-options/#run-all).
+
+## TODO
+
+- check Prometheus add-on and the cooperation with Grafana
