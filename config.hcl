@@ -1,5 +1,5 @@
 locals {
-  region = ""
+  region = "eu-west-1"
   
   # VPC variables to use only if you want use an existing VPC
   vpc_id = ""
@@ -7,7 +7,7 @@ locals {
   vpc_public_subnets = []
 
   # VPC variables to use if you want to create a new VPC
-  vpc_cidr = ""
+  vpc_cidr = "10.9.0.0/16"
   vpc_enable_nat_gateway    = true
   vpc_single_nat_gateway    = true
   vpc_enable_dns_hostnames  = true
@@ -19,14 +19,15 @@ locals {
   vpc_tags_Environment = ""
 
   # EKS cluster info
-  tenant = ""
-  environment = ""
-  zone = ""
+  tenant = "mytestt"
+  environment = "teste"
+  zone = "testz"
   terraform_version = "Terraform 1.0.1"
   cluster_version = "1.21"
 
   # EKS cluster node group
-
+  # node group name has to be defined also outside in order to be accessible from eks-addons
+  node_group_name = "managed-group"
   managed_node_groups = {
     t3_L= {
       node_group_name = "managed-group"
